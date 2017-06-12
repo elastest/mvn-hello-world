@@ -129,8 +129,8 @@
 		  	<version>${nexus.staging.maven.plugin.version}</version>
 		  	<extensions>true</extensions>
 		  	<configuration>
-		    	 	<serverId>ossrh</serverId>
-		     		<nexusUrl>https://oss.sonatype.org/</nexusUrl>
+		    	 	<serverId>nexus</serverId>
+		     		<nexusUrl>http://ci.elastest.io/nexus/</nexusUrl>
 		     		<autoReleaseAfterClose>false</autoReleaseAfterClose>
 		  	</configuration>
 		</plugin>
