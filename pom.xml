@@ -36,14 +36,6 @@
 		</developer>
 	</developers>
 	
-	<!-- Source Code Manager -->
-	<scm>
-		<url>https://github.com/elastest/mvn-hello-world</url>
-		<connection>scm:git:https://github.com/elastest/mvn-hello-world</connection>
-		<developerConnection>scm:git://git@github.com:elastest/mvn-hello-world</developerConnection>
-		<tag>develop</tag>
-	</scm>
-	
 	<!-- Distribution management (all elastest public artifacts should set this configuration)-->
 	<distributionManagement>
 		<snapshotRepository>
@@ -82,21 +74,7 @@
 	
 	<build>
 		<plugins>
-		<!-- maven source plugin required for Central deploy--> 
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-source-plugin</artifactId>
-				<version>${maven.source.plugin.version}</version>
-				<executions>
-					<execution>
-						<id>attach-sources</id>
-						<goals>
-							<goal>jar-no-fork</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
-		<plugin>
+		   <plugin>
 			<groupId>org.apache.maven.plugins</groupId>
 			<artifactId>maven-javadoc-plugin</artifactId>
 			<version>${maven.javadoc.plugin.version}</version>
