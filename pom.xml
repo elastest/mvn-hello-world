@@ -51,7 +51,7 @@
 			<url>http://ci.elastest.io/nexus/repository/maven-snapshots/</url>
 		</snapshotRepository>
 		<repository>
-			<id>ossrh</id>
+			<id>nexus</id>
 			<url>http://ci.elastest.io/nexus/repository/maven-releases/</url>
 		</repository>
 	</distributionManagement>	
